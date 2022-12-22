@@ -38,11 +38,12 @@ from handlers.save_media import (
 MediaList = {}
 
 Bot = Client(
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
+    "Anonymous",
+    Config.API_ID,
+    Config.API_HASH,
     bot_token=Config.BOT_TOKEN,
+    in_memory=True,
 )
-
 
 @Bot.on_message(filters.private)
 async def _(bot: Client, cmd: Message):
