@@ -42,7 +42,7 @@ Bot = Client(
     Config.API_ID,
     Config.API_HASH,
     Config.BOT_TOKEN,
-    in_memory=True,
+   
 )
 
 @Bot.on_message(filters.private)
