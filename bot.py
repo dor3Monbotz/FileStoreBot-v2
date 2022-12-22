@@ -41,7 +41,7 @@ Bot = Client(
     "Anonymous",
     Config.API_ID,
     Config.API_HASH,
-    bot_token=Config.BOT_TOKEN,
+    Config.BOT_TOKEN,
     in_memory=True,
 )
 
